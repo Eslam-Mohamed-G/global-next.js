@@ -37,9 +37,9 @@ const Sidbar = () => {
     const pathName = usePathname();
 
     return (
-        <aside className="border border-red-500 text-textGray w-36 flex items-center content-center justify-items-center align-middle">
-            <nav className="w-fit h-full pt-10 m-auto relative before:content-[''] before:absolute before:left-[.7px] before:top-0 before:h-full before:w-0.5 before:bg-textGray/40 before:z-0">
-                <ul className='flex flex-col gap-10'>
+        <aside className="text-textGray pl-3 pt-10">
+            <nav className="w-fit m-auto py-14 relative before:content-[''] before:absolute before:left-[.8px] before:top-0 before:h-full before:w-0.5 before:bg-textGray/40 before:z-0">
+                <ul className='flex flex-col gap-14'>
                     {sidebarMenu.map((menu) => (
                         <li className="items-center align-middle justify-items-center h-10" key={menu.id}>
                             <Link href={menu.link} className='items-center justify-items-center'>
