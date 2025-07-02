@@ -37,15 +37,15 @@ const Sidbar = () => {
     const pathName = usePathname();
 
     return (
-        <aside className="border border-red-500 text-gray-500 w-36 flex items-center content-center justify-items-center align-middle">
-            <nav className="border-l-1 border-l-blue-500 w-fit m-auto">
-                <ul className='flex flex-col gap-5'>
+        <aside className="border border-red-500 text-textGray w-36 flex items-center content-center justify-items-center align-middle">
+            <nav className="w-fit h-full pt-10 m-auto relative before:content-[''] before:absolute before:left-[1px] before:top-0 before:h-full before:w-0.5 before:bg-textGray before:z-0">
+                <ul className='flex flex-col gap-10'>
                     {sidebarMenu.map((menu) => (
                         <li className="items-center align-middle justify-items-center h-10" key={menu.id}>
                             <Link href={menu.link} className='items-center justify-items-center'>
                                 <div className="flex flex-row justify-items-center items-center justify-center gap-2">
                                     {/* blue&gray circle */}
-                                    <span className={`w-1 h-1 rounded-full transition-all delay-75 ${pathName === menu.link ? "bg-blue-500" : "bg-white"} `} />
+                                    <span className={`w-1 h-1 rounded-full transition-all delay-75 z-50 ${pathName === menu.link ? "bg-blueColor" : "bg-white"} `} />
 
                                     {/* text */}
                                     <div className="flex-1 relative flex gap-2 items-center">
