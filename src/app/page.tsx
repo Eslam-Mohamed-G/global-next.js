@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black w-3/4 mx-auto flex flex-col justify-between justify-items-center">
+    <div className="bg-black w-3/4 mx-auto flex flex-col justify-items-center">
       <div className="flex items-center justify-end relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-16 before:end-3.5 before:bg-borderGray before:z-0">
         {/* text */}
         <div className="flex flex-col justify-center text-white gap-7">
@@ -28,7 +28,7 @@ export default function Home() {
         <img src="/img/introduction.png" alt="introduction" className="hidden sm:block w-1/2 m-0 p-0" />
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center md:justify-around w-[90%] mx-auto text-white">
+      <div className="flex-1 flex flex-col md:flex-row items-end justify-center md:justify-around w-[90%] mx-auto text-white relative before:content-[''] before:absolute before:-top-[3px] before:w-7 before:h-1 before:start-10 before:bg-blueColor before:z-0">
         <div className="flex flex-col gap-4 md:w-[27%] text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
           <h1 className="uppercase font-bold">metiew & smith</h1>
           <span>Lorem ipsum dolor, sit amet <br/> consectetur adipisicing elit. Quia</span>
