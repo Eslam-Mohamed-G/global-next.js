@@ -31,12 +31,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black h-screen overflow-hidden`}
       >
         <nav>
-          <Navbar/>
+          <Navbar />
         </nav>
-        <div className="flex flex-row bg-black px-5 md:px-12 xl:px-20">
+        <div className="flex flex-row bg-black px-5 md:px-12 xl:px-20 max-h-screen">
           {/* sidebar */}
-          <Sidbar/>
-          {children}
+          <Sidbar />
+          <div className="flex-1 flex justify-center">
+            {children}
+          </div>
         </div>
       </body>
     </html>
