@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,14 +15,14 @@ export default function Home() {
           </div>
 
           {/* link to hire us */}
-          <div className="relative group cursor-pointer w-fit px-3 py-1 flex items-center content-center gap-2">
+          <Link href="/hire" className="relative group cursor-pointer w-fit px-3 py-1 flex items-center content-center gap-2">
             <div className="bg-blueColor w-20 group-hover:w-full h-full absolute top-0 right-0 z-10 transition-all delay-75" />
             <span className="w-fit uppercase font-bold relative z-50">Hire us</span>
 
             <svg className="w-4 h-4 text-white relative z-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
-          </div>
+          </Link>
         </div>
 
         {/* introduction image */}
