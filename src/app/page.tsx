@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-black w-3/4 mx-auto flex flex-col justify-items-center">
-      <div className="flex items-center justify-end relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-16 before:end-3.5 before:bg-borderGray before:z-0">
+    <div className="bg-black w-full mx-auto flex flex-col md:items-center justify-items-center">
+      <div className="flex sm:items-center pb-10 sm:pb-0 justify-between md:min-h-2/3 relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-0 before:end-3.5 before:bg-borderGray before:z-0">
         {/* text */}
-        <div className="flex flex-col justify-center text-white gap-7">
+        <div className="flex flex-col md:justify-center text-white gap-10">
           {/* there words */}
-          <div className="flex flex-col text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">
+          <div className="flex flex-col text-5xl md:text-6xl lg:text-7xl font-extrabold">
             <span>Your next</span>
             <span>interactive</span>
             <span>experience</span>
@@ -26,21 +26,21 @@ export default function Home() {
         </div>
 
         {/* introduction image */}
-        <img src="/img/introduction.png" alt="introduction" className="hidden sm:block w-1/2 m-0 p-0" />
+        <img src="/img/introduction.png" alt="introduction" className="hidden sm:block w-80 md:w-full m-0 p-0" />
       </div>
 
-      <div className="flex-1 flex flex-col md:flex-row items-end justify-center md:justify-around w-[90%] mx-auto text-white relative before:content-[''] before:absolute before:-top-[3px] before:w-7 before:h-1 before:start-10 before:bg-blueColor before:z-0">
-        <div className="flex flex-col gap-4 md:w-[27%] text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
+      <div className="flex-1 flex flex-col md:flex-row justify-center md:justify-around pt-10 md:mx-auto text-white relative before:content-[''] before:absolute before:-top-[3px] before:w-7 before:h-1 before:start-5 before:bg-blueColor before:z-0">
+        <div className="flex flex-col gap-4 md:max-w-3xs text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
           <h1 className="uppercase font-bold">metiew & smith</h1>
-          <span>Lorem ipsum dolor, sit amet <br/> consectetur adipisicing elit. Quia</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia</span>
         </div>
-        <div className="flex flex-col gap-4 md:w-[27%] text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
+        <div className="flex flex-col gap-4 md:max-w-3xs md:mx-6 lg:mx-14 my-6 md:my-0 text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
           <h1 className="uppercase font-bold">fantasy interactive</h1>
-          <span>Lorem ipsum dolor, sit amet <br/> consectetur adipisicing elit. Quia</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia</span>
         </div>
-        <div className="flex flex-col gap-4 md:w-[27%] text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
+        <div className="flex flex-col gap-4 md:max-w-3xs text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
           <h1 className="uppercase font-bold">paul & shark</h1>
-          <span>Lorem ipsum dolor, sit amet <br/> consectetur adipisicing elit. Quia</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia</span>
         </div>
       </div>
     </div>

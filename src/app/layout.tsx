@@ -33,9 +33,11 @@ export default function RootLayout({
         <nav>
           <Navbar />
         </nav>
-        <div className="flex flex-row bg-black px-5 md:px-12 xl:px-20 max-h-screen">
+        <div className="flex flex-row bg-black px-5 md:px-12 xl:px-20">
           {/* sidebar */}
-          <Sidbar />
+          <aside className="hidden lg:block">
+            <Sidbar />
+          </aside>
           <div className="flex-1 flex justify-center">
             {children}
           </div>

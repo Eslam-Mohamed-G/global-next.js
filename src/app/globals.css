@@ -6,4 +6,7 @@
     --color-textGrayLight: #e7e9ea;
     --color-borderGray: #2f3336;
     --color-backGround: #181818;
+
+    --breakpoint-sm: 600px;
+    --breakpoint-lg: 900px;
 }
