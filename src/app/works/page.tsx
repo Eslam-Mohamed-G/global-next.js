@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Slider from "react-slick";
 
@@ -9,10 +10,20 @@ const Works = () => {
         centerPadding: "60px",
         slidesToShow: 3,
         speed: 500
-      };
+    };
     return (
-        <div>
-            <h1 className='text-white font-bold text-3xl'>Selected work</h1>
+        <div className="slider-container text-white">
+            <Slider {...settings}>
+                <div>
+                    <h3>1</h3>
+                </div>
+                <div>
+                    <h3>2</h3>
+                </div>
+                <div>
+                    <h3>3</h3>
+                </div>
+            </Slider>
         </div>
     );
 }

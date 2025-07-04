@@ -4,6 +4,8 @@ import "./globals.css";
 import Link from "next/link";
 import Sidbar from "@/components/SidBar/Sidbar";
 import Navbar from "@/components/Navbar/Navbar";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
