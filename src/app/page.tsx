@@ -8,7 +8,7 @@ export default function Home() {
         {/* text */}
         <div className="flex flex-col md:justify-center text-white gap-10">
           {/* there words */}
-          <div className="flex flex-col text-5xl md:text-6xl lg:text-7xl font-extrabold">
+          <div className="flex flex-col text-5xl md:text-6xl xl:text-[74px] font-extrabold">
             <span>Your next</span>
             <span>interactive</span>
             <span>experience</span>
