@@ -16,6 +16,20 @@ function SampleNextArrow(props: any) {
     );
 }
 
+function SamplePrevArrow(props: any) {
+    const { className, onClick } = props;
+    return (
+        <div
+            className={className}
+            onClick={onClick}
+        >
+            <svg className="w-4 h-4 text-white relative z-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
+            </svg>
+        </div>
+    );
+}
+
 const Works = () => {
     const settings = {
         className: "center",
@@ -34,11 +48,12 @@ const Works = () => {
             },
         ],
         nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
     return (
         <div className="flex flex-col content-center items-center justify-center justify-items-center text-white">
             <h1 className='font-bold text-4xl'>Selected work</h1>
-            <div className="h-2/3 w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center border">
+            <div className="h-2/3 w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
                     <div className='h-full w-full '>
                         <div className="flex flex-col gap-5 items-center justify-center h-full w-full">
