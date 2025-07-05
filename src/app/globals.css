@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
     --color-blueColor: #0B70CB;
     --color-textGray: #71767b;
     --color-textGrayLight: #e7e9ea;
@@ -19,4 +19,47 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+@layer utilities {
+    .slick-center > div{
+        @apply scale-150 transition-transform duration-300 overflow-visible;
+    }
+}
+
+/* تصغير باقي السلايدات */
+.slick-slide .image-wrapper {
+    transform: scale(0.9);
+    opacity: 0.6;
+    transition: all 0.4s ease-in-out;
+}
+
+.slick-slide .name-text {
+    font-size: 0.75rem;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-slide .description-text {
+    max-width: 240px;
+    text-align: center;
+}
+
+
+/* تكبير الصورة والوصف فقط في السلايد اللي في المنتصف */
+.slick-center .image-wrapper {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.slick-center .name-text {
+    font-size: 1rem;
+    opacity: 1;
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-center .description-text {
+    display: block;
+    transition: all 0.3s ease-in-out;
 }

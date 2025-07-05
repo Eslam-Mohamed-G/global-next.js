@@ -32,7 +32,7 @@ function SamplePrevArrow(props: any) {
 
 const Works = () => {
     const settings = {
-        className: "center",
+        className: "center h-full content-center",
         centerMode: true,
         infinite: true,
         centerPadding: "0px",
@@ -53,42 +53,80 @@ const Works = () => {
     return (
         <div className="flex flex-col content-center items-center justify-center justify-items-center text-white">
             <h1 className='font-bold text-4xl'>Selected work</h1>
-            <div className="h-2/3 w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
+            <div className="h-full w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
-                    <div className='h-full w-full '>
-                        <div className="flex flex-col gap-5 items-center justify-center h-full w-full">
-                            <div className='w-44 h-44 rounded-full overflow-hidden'>
-                                <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full' />
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
                             </div>
-
-                            <div className='text-white'>
-                                <h1 className='uppercase font-bold'>victory</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='h-full w-full '>
-                        <div className="flex flex-col gap-5 h-full items-center justify-center">
-                            <div className='w-44 h-44 rounded-full overflow-hidden'>
-                                <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full' />
-                            </div>
-                            <div className='text-white'>
-                                <h1 className='uppercase font-bold'>metiew & smith</h1>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>vicory</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className='h-full w-full '>
-                        <div className="flex flex-col gap-5 h-full items-center justify-center">
-                            <div className='w-44 h-44 rounded-full overflow-hidden'>
-                                <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full' />
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
                             </div>
-
-                            <div className='text-white'>
-                                <h1 className='uppercase font-bold'>alex nowax</h1>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
                             </div>
                         </div>
                     </div>
+
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
+                            </div>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>alex nowex</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
+                            </div>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>vicory</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
+                            </div>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='h-[500px] w-full slick-slide-content'>
+                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
+                            </div>
+                            <div>
+                                <h1 className='uppercase font-bold name-text'>alex nowex</h1>
+                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </Slider>
             </div>
         </div>
