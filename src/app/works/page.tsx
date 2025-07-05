@@ -23,11 +23,11 @@ const Works = () => {
         ]
     };
     return (
-        <div className="flex flex-col gap-10 w-fit items-center justify-center text-white border border-red-400">
+        <div className="flex flex-col content-center items-center justify-center justify-items-center text-white">
             <h1 className='font-bold text-4xl'>Selected work</h1>
-            <div className="h-3/4 border w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
+            <div className="h-2/3 w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
-                    <div className='h-full w-full border'>
+                    <div className='h-full w-full '>
                         <div className="flex flex-col gap-5 items-center justify-center h-full w-full">
                             <div className='w-44 h-44 rounded-full overflow-hidden'>
                                 <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full' />
@@ -39,7 +39,7 @@ const Works = () => {
                         </div>
                     </div>
 
-                    <div className='h-full w-full border border-red-500'>
+                    <div className='h-full w-full '>
                         <div className="flex flex-col gap-5 h-full items-center justify-center">
                             <div className='w-44 h-44 rounded-full overflow-hidden'>
                                 <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full' />
@@ -50,7 +50,7 @@ const Works = () => {
                         </div>
                     </div>
 
-                    <div className='h-full w-full border'>
+                    <div className='h-full w-full '>
                         <div className="flex flex-col gap-5 h-full items-center justify-center">
                             <div className='w-44 h-44 rounded-full overflow-hidden'>
                                 <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full' />
