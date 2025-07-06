@@ -2,9 +2,9 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className=' border w-full h-full flex items-center justify-center'>
-            <div className="flex flex-row">
-                <div className="flex flex-col gap-14 lg:w-3xl">
+        <div className='w-full h-full flex items-center justify-start'>
+            <div className="flex flex-row w-full relative lg:pl-10 xl:pl-36">
+                <div className="flex flex-col gap-14 lg:w-2xl relative z-10">
                     <div className="flex flex-col items-start gap-10">
                         <p className='text-white text-6xl sm:text-5xl md:text-7xl font-extrabold'>
                             <span className='relative before:absolute before:top-1 before:-right-20 md:before:-right-28 before:border-t-11 before:border-l-11 before:border-transparent before:border-l-blueColor before:rotate-[60deg]'>we</span> <br />
@@ -47,7 +47,9 @@ const Page = () => {
                 </div>
 
                 {/* right div for big img */}
-                <div className=""></div>
+                <div className="w-96 xlg:w-[450px] hidden sm:block absolute z-0 right-20 xlg:right-32 xlg:bottom-0 xl:right-40 sm:right-0 sm:bottom-5 md:bottom-10">
+                    <img src="/img/about-visual.png" alt="visual" className='w-full h-full object-cover'/>
+                </div>
             </div>
         </div>
     );
