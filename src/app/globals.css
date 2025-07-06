@@ -22,8 +22,54 @@
 }
 
 @layer utilities {
-    .slick-center > div{
-        @apply scale-150 transition-transform duration-300 overflow-visible;
+    .slick-center>div {
+        @apply transition-transform duration-300 overflow-visible;
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 999px) {
+    .slick-center>div {
+        transform: scale(1.25);
+    }
+}
+
+@media (max-width: 900px) {
+    .slick-prev {
+        left: -40px !important;
+        z-index: 100 !important;
+    }
+    [dir='rtl'] .slick-prev {
+        right: -40px !important;
+        left: auto !important;
+    }
+
+    .slick-next {
+        right: -40px !important;
+    }
+
+    [dir='rtl'] .slick-next {
+        right: auto !important;
+        left: -40px !important;
+    }
+}
+@media (max-width: 500px) {
+    .slick-prev {
+        left: -15px !important;
+        z-index: 100 !important;
+    }
+    [dir='rtl'] .slick-prev {
+        right: -15px !important;
+        left: auto !important;
+    }
+
+    .slick-next {
+        right: -15px !important;
+    }
+
+    [dir='rtl'] .slick-next {
+        right: auto !important;
+        left: -15px !important;
     }
 }
 

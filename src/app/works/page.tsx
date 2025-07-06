@@ -51,13 +51,13 @@ const Works = () => {
         prevArrow: <SamplePrevArrow />
     };
     return (
-        <div className="flex flex-col content-center items-center justify-center justify-items-center text-white">
+        <div className="flex flex-col content-center items-center justify-center justify-items-center text-white pt-10">
             <h1 className='font-bold text-4xl'>Selected work</h1>
-            <div className="h-full w-80 xsm:w-96 sm:w-lg xmd:w-xl md:w-2xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
+            <div className="h-full w-80 xsm:w-96 sm:w-lg xmd:w-xl md:min-w-2xl lg:w-3xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
                             </div>
                             <div>
@@ -69,7 +69,7 @@ const Works = () => {
 
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
                             </div>
                             <div>
@@ -81,7 +81,7 @@ const Works = () => {
 
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
                             </div>
                             <div>
@@ -93,7 +93,7 @@ const Works = () => {
                     
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
                             </div>
                             <div>
@@ -105,7 +105,7 @@ const Works = () => {
 
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
                             </div>
                             <div>
@@ -117,7 +117,7 @@ const Works = () => {
 
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
                                 <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
                             </div>
                             <div>
