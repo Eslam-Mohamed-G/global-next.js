@@ -4,8 +4,8 @@ const Page = () => {
     return (
         <div className=' border w-full h-full flex items-center justify-center'>
             <div className="flex flex-row">
-                <div className="flex flex-col gap-14 border border-white lg:w-3xl">
-                    <div className="flex flex-col items-start gap-10 border">
+                <div className="flex flex-col gap-14 lg:w-3xl">
+                    <div className="flex flex-col items-start gap-10">
                         <p className='text-white text-6xl sm:text-5xl md:text-7xl font-extrabold'>
                             <span className='relative before:absolute before:top-1 before:-right-20 md:before:-right-28 before:border-t-11 before:border-l-11 before:border-transparent before:border-l-blueColor before:rotate-[60deg]'>we</span> <br />
                             believe
@@ -22,7 +22,7 @@ const Page = () => {
                     </div>
 
                     {/* there images */}
-                    <div className="flex flex-row gap-5 md:gap-10 flex-1 border border-red-500">
+                    <div className="flex flex-row gap-5 md:gap-10 flex-1">
                         <div className="w-1/3 h-1/2 overflow-hidden text-white bg-blueColor group cursor-pointer">
                             <div className="w-full h-full p-1 sm:p-2 md:p-3 box-border transition-all delay-150 relative group-hover:p-0">
                                 <img src="/img/about-winners.jpg" alt="winners"  className='w-full h-full object-cover'/>
