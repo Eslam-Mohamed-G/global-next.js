@@ -22,24 +22,24 @@ const Page = () => {
                     </div>
 
                     {/* there images */}
-                    <div className="flex flex-row gap-5 md:gap-10 flex-1">
-                        <div className="w-1/3 h-1/2 overflow-hidden text-white bg-blueColor group cursor-pointer">
-                            <div className="w-full h-full p-1 sm:p-2 md:p-3 box-border transition-all delay-150 relative group-hover:p-0">
-                                <img src="/img/about-winners.jpg" alt="winners"  className='w-full h-full object-cover'/>
+                    <div className="flex flex-row gap-5 md:gap-10 h-1/3">
+                        <div className="w-1/3 h-2/3 flex justify-center items-center overflow-hidden text-white bg-blueColor group cursor-pointer">
+                            <div className="w-full h-full relative">
+                                <img src="/img/about-winners.jpg" alt="winners"  className='w-full h-full object-cover block transition-transform duration-300 ease-in-out scale-80 group-hover:scale-110'/>
                                 <span className='uppercase text-blueColor font-bold absolute -bottom-5 right-2 transition-all delay-150 group-hover:-bottom-0'>winners</span>
                             </div>
                         </div>
 
-                        <div className="w-1/3 h-1/2 overflow-hidden text-white bg-blueColor group cursor-pointer">
-                            <div className="w-full h-full p-1 sm:p-2 md:p-3 box-border transition-all delay-150 relative group-hover:p-0">
-                                <img src="/img/about-philosophy.jpg" alt="philosophy"  className='w-full h-full object-cover'/>
+                        <div className="w-1/3 h-2/3 box-border overflow-hidden text-white bg-blueColor group cursor-pointer">
+                            <div className="w-full h-full relative">
+                                <img src="/img/about-philosophy.jpg" alt="philosophy"  className='w-full h-full object-cover block transition-transform duration-300 ease-in-out scale-80 group-hover:scale-110'/>
                                 <span className='uppercase text-blueColor font-bold absolute -bottom-5 right-2 transition-all delay-150 group-hover:-bottom-0'>philosophy</span>
                             </div>
                         </div>
 
-                        <div className="w-1/3 h-1/2 overflow-hidden text-white bg-blueColor group cursor-pointer">
-                            <div className="w-full h-full p-1 sm:p-2 md:p-3 box-border transition-all delay-150 relative group-hover:p-0">
-                                <img src="/img/about-history.jpg" alt="history"  className='w-full h-full object-cover'/>
+                        <div className="w-1/3 h-2/3 box-border overflow-hidden text-white bg-blueColor group cursor-pointer">
+                            <div className="w-full h-full relative">
+                                <img src="/img/about-history.jpg" alt="history"  className='w-full h-full object-cover block transition-transform duration-300 ease-in-out scale-80 group-hover:scale-110'/>
                                 <span className='uppercase text-blueColor font-bold absolute -bottom-5 right-2 transition-all delay-150 group-hover:-bottom-0'>history</span>
                             </div>
                         </div>
