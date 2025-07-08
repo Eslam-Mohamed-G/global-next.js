@@ -2,10 +2,10 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className='border border-red-600 w-full h-full flex flex-col items-center justify-center gap-10'>
+        <div className='w-full h-full flex flex-col items-center justify-center gap-16'>
             <h1 className='font-bold text-white text-3xl'>You wont us to do</h1>
-            <div className="flex flex-col justify-center items-center gap-10">
-                <div className="text-white flex flex-row md:flex-col gap-3 xsm:gap-6 md:gap-10 items-center justify-center border">
+            <div className="flex flex-col justify-center items-center gap-16">
+                <div className="text-white flex flex-row md:flex-col gap-3 xsm:gap-6 md:gap-10 items-center justify-center">
                     <div className='flex flex-col md:flex-row gap-3 xsm:gap-6 md:gap-10'>
                         <button className='font-bold xsm:text-[20px] capitalize border-2 hover:bg-blueColor transition-all delay-150 cursor-pointer w-40 xsm:w-48 md:w-52 lg:w-56 py-3'>app design</button>
                         <button className='font-bold xsm:text-[20px] capitalize border-2 hover:bg-blueColor transition-all delay-150 cursor-pointer w-40 xsm:w-48 md:w-52 lg:w-56 py-3'>graphic design</button>
