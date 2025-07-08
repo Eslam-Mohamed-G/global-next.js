@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-black w-full mx-auto flex flex-col md:items-center justify-items-center">
-      <div className="flex sm:items-center pb-10 sm:pb-0 justify-between md:min-h-2/3 relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-0 before:end-3.5 before:bg-borderGray before:z-0">
+      <div className="flex sm:items-center pb-10 sm:pb-0 justify-between relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-0 before:end-3.5 before:bg-borderGray before:z-0">
         {/* text */}
         <div className="flex flex-col md:justify-center text-white gap-10">
           {/* there words */}
