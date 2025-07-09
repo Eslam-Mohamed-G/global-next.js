@@ -37,6 +37,7 @@ const Sidbar = () => {
     const pathName = usePathname();
     const router = useRouter();
     const currentIndex = useRef(0);
+    const canScroll = useRef(true);
 
     useEffect(() => {
         const index = sidebarMenu.findIndex( item => item.link === pathName);
@@ -57,9 +58,23 @@ const Sidbar = () => {
                 console.log(sidebarMenu[currentIndex.current].link);
             }
         }
+
+        const handleWheelMouse  = ( e:WheelEvent) => {
+            if ( !canScroll.current) return;
+            if (e.deltaY < 0) {
+                currentIndex.current = 
+                currentIndex.current <= 0 ? sidebarMenu.length -1 : currentIndex.current - 1 ;
+            } else if ( e.deltaY > 0 ) {
+                currentIndex.current = 
+                currentIndex.current >= sidebarMenu.length -1 ? 0 : currentIndex.current + 1;
+            }
+            router.push(sidebarMenu[currentIndex.current].link);
+        }
         window.addEventListener('keydown', handleKeyDown)
+        window.addEventListener('wheel', handleWheelMouse)
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('wheel', handleWheelMouse);
         };
     }, [router]);
 
