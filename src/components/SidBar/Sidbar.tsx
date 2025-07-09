@@ -39,6 +39,10 @@ const Sidbar = () => {
     const currentIndex = useRef(0);
 
     useEffect(() => {
+        const index = sidebarMenu.findIndex( item => item.link === pathName);
+        if ( index !== -1) {
+            currentIndex.current = index;
+        }
         const handleKeyDown = (e:KeyboardEvent) => {
             if( e.key === "ArrowUp") {
                 currentIndex.current = 
