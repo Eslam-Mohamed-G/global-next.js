@@ -50,13 +50,11 @@ const Sidbar = () => {
                 currentIndex.current = 
                 currentIndex.current <= 0 ? sidebarMenu.length -1 : currentIndex.current - 1 ;
                 router.push(sidebarMenu[currentIndex.current].link);
-                console.log(sidebarMenu[currentIndex.current].link);
                 
             }else if ( e.key === "ArrowDown"){
                 currentIndex.current = 
                 currentIndex.current >= sidebarMenu.length -1 ? 0 : currentIndex.current + 1;
                 router.push(sidebarMenu[currentIndex.current].link);
-                console.log(sidebarMenu[currentIndex.current].link);
             }
         }
 
