@@ -44,6 +44,11 @@ const Sidbar = () => {
         if ( index !== -1) {
             currentIndex.current = index;
         }
+
+        const handleClick = (e:React.MouseEvent) => {
+            console.log(e.target.addEventListener.length);
+            
+        }
         const handleKeyDown = (e:KeyboardEvent) => {
             if( e.key === "ArrowUp") {
                 currentIndex.current = 
@@ -82,9 +87,9 @@ const Sidbar = () => {
         <aside className="text-textGray pl-3 pt-10">
             <nav className="w-fit m-auto py-14 relative before:content-[''] before:absolute before:left-[.8px] before:top-0 before:h-full before:w-0.5 before:bg-textGray/40 before:z-0">
                 <ul className='flex flex-col gap-14'>
-                    {sidebarMenu.map((menu) => (
+                    {sidebarMenu.map((menu, i) => (
                         <li className="items-center align-middle justify-items-center h-10" key={menu.id}>
-                            <Link href={menu.link} className='items-center justify-items-center'>
+                            <Link href={menu.link} onClick={()=>{currentIndex.current = i}} className='items-center justify-items-center'>
                                 <div className="flex flex-row justify-items-center items-center justify-center gap-2">
                                     {/* blue&gray circle */}
                                     <span className={`w-1 h-1 rounded-full transition-all delay-75 z-50 ${pathName === menu.link ? "bg-blueColor" : "bg-white"} `} />
