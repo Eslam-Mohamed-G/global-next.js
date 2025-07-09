@@ -45,10 +45,6 @@ const Sidbar = () => {
             currentIndex.current = index;
         }
 
-        const handleClick = (e:React.MouseEvent) => {
-            console.log(e.target.addEventListener.length);
-            
-        }
         const handleKeyDown = (e:KeyboardEvent) => {
             if( e.key === "ArrowUp") {
                 currentIndex.current = 
