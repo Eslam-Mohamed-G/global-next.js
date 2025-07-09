@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import React, { useEffect, useRef } from 'react';
 
 
 const sidebarMenu = [
@@ -35,6 +35,29 @@ const sidebarMenu = [
 const Sidbar = () => {
 
     const pathName = usePathname();
+    const router = useRouter();
+    const currentIndex = useRef(0);
+
+    useEffect(() => {
+        const handleKeyDown = (e:KeyboardEvent) => {
+            if( e.key === "ArrowUp") {
+                currentIndex.current = 
+                currentIndex.current <= 0 ? sidebarMenu.length -1 : currentIndex.current - 1 ;
+                router.push(sidebarMenu[currentIndex.current].link);
+                console.log(sidebarMenu[currentIndex.current].link);
+                
+            }else if ( e.key === "ArrowDown"){
+                currentIndex.current = 
+                currentIndex.current >= sidebarMenu.length -1 ? 0 : currentIndex.current + 1;
+                router.push(sidebarMenu[currentIndex.current].link);
+                console.log(sidebarMenu[currentIndex.current].link);
+            }
+        }
+        window.addEventListener('keydown', handleKeyDown)
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [router]);
 
     return (
         <aside className="text-textGray pl-3 pt-10">
