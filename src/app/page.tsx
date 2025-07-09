@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-black w-full mx-auto flex flex-col md:items-center gap-10">
+    <div className="bg-black w-full mx-auto flex flex-col md:items-center gap-7 sm:gap-10">
       <div className="flex sm:items-center pb-10 sm:pb-0 justify-between relative before:content-[''] before:absolute before:bottom-0 before:h-0.5 before:start-0 before:end-2.5 sm:before:end-3.5 before:bg-borderGray before:z-0">
         {/* text */}
         <div className="flex flex-col md:justify-center text-white gap-10">
@@ -29,7 +29,7 @@ export default function Home() {
         <img src="/img/introduction.png" alt="introduction" className="hidden sm:block w-80 md:w-full m-0 p-0" />
       </div>
 
-      <div className="flex-1 flex flex-col md:flex-row md:justify-around md:mx-auto text-white relative before:content-[''] before:absolute before:-top-[43px] before:w-7 before:h-1 before:start-5 before:bg-blueColor before:z-0">
+      <div className="flex-1 flex flex-col md:flex-row md:justify-around md:mx-auto text-white relative before:content-[''] before:absolute before:-top-[31px] sm:before:-top-[43px] before:w-7 before:h-1 before:start-5 before:bg-blueColor before:z-0">
         <div className="flex flex-col gap-1 sm:gap-4 md:max-w-3xs text-start cursor-pointer opacity-15 hover:opacity-100 transition-all delay-100">
           <h1 className="uppercase font-bold">metiew & smith</h1>
           <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia</span>
