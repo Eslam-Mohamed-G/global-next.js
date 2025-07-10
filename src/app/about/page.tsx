@@ -22,7 +22,7 @@ const Page = () => {
                     </div>
 
                     {/* there images */}
-                    <div className="flex flex-row gap-5 md:gap-10 h-1/3">
+                    <div className="flex flex-row gap-3 xsm:gap-10 h-1/3">
                         <div className="w-1/3 h-2/3 flex justify-center items-center overflow-hidden text-white bg-blueColor group cursor-pointer">
                             <div className="w-full h-full relative">
                                 <img src="/img/about-winners.jpg" alt="winners"  className='w-full h-full object-cover block transition-transform duration-300 ease-in-out scale-90 sm:scale-80 group-hover:scale-110'/>

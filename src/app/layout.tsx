@@ -35,7 +35,7 @@ export default function RootLayout({
         <nav>
           <Navbar />
         </nav>
-        <div className="flex-1 flex flex-row px-5 md:px-12 xl:px-20">
+        <main className="flex-1 flex flex-row px-5 md:px-12 xl:px-20">
           {/* sidebar */}
           <aside className="hidden lg:block">
             <Sidbar />
@@ -43,7 +43,7 @@ export default function RootLayout({
           <div className="flex-1 flex justify-center">
             {children}
           </div>
-        </div>
+        </main>
       </body>
     </html>
   );
