@@ -6,6 +6,7 @@ import Sidbar from "@/components/SidBar/Sidbar";
 import Navbar from "@/components/Navbar/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SidebarProvider } from "@/context/SidebarContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black h-screen overflow-hidden flex flex-col justify-center`}
       >
+        <SidebarProvider>
         <nav>
           <Navbar />
         </nav>
@@ -44,6 +46,7 @@ export default function RootLayout({
             {children}
           </div>
         </main>
+        </SidebarProvider>
       </body>
     </html>
   );
