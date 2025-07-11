@@ -1,6 +1,7 @@
 'use client'
 import { useSidebar } from '@/context/SidebarContext';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React, { ReactNode } from 'react';
 
 const sidebarMenu = [
@@ -36,6 +37,7 @@ type Props = {
 }
 
 const TransformLayout = ({ children }: Props) => {
+    const pathName = usePathname();
     const { isOpen, setIsOpen } = useSidebar();
 
     const handleMenu = () => {
@@ -51,10 +53,10 @@ const TransformLayout = ({ children }: Props) => {
             </div>
             {/* navbar */}
             <aside className={`text-white ${isOpen ? 'outer-nav' : 'return' }`}>
-                <ul className='flex flex-col gap-5 md:gap-10 text-4xl sm:text-5xl md:text-6xl font-extrabold'>
+                <ul className='flex flex-col w-fit gap-5 md:gap-10 text-4xl sm:text-5xl md:text-6xl font-extrabold justify-center items-center'>
                     {sidebarMenu.map((menu, i) => (
-                        <li key={menu.id} onClick={handleMenu}>
-                            <Link href={menu.link}>{menu.name}</Link>
+                        <li key={menu.id} onClick={handleMenu} className='relative w-fit'>
+                            <Link href={menu.link} className={pathName === menu.link ? 'after:absolute after:h-2 sm:after:h-3 md:after:h-4 after:-start-4 after:-end-4 after:top-1/2 after:bg-blueColor' : '' }>{menu.name}</Link>
                         </li>
                     ))}
                 </ul>
