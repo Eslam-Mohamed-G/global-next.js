@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Sidbar from "@/components/SidBar/Sidbar";
-import Navbar from "@/components/Navbar/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { SidebarProvider } from "@/context/SidebarContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,20 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black h-screen overflow-hidden flex flex-col justify-center`}
       >
-        <SidebarProvider>
-        <nav>
-          <Navbar />
-        </nav>
-        <main className="flex-1 flex flex-row px-5 md:px-12 xl:px-20">
-          {/* sidebar */}
-          <aside className="hidden lg:block">
-            <Sidbar />
-          </aside>
-          <div className="flex-1 flex justify-center">
-            {children}
-          </div>
+        <main className="bg-black">
+          {children}
         </main>
-        </SidebarProvider>
       </body>
     </html>
   );

@@ -8,27 +8,27 @@ const sidebarMenu = [
     {
         id: "01",
         name: "Home",
-        link: "/",
+        link: "/pages",
     },
     {
         id: "02",
         name: "Works",
-        link: "/works",
+        link: "/pages/works",
     },
     {
         id: "03",
         name: "About",
-        link: "/about",
+        link: "/pages/about",
     },
     {
         id: "04",
         name: "Contact",
-        link: "/contact",
+        link: "/pages/contact",
     },
     {
         id: "05",
         name: "Hire Us",
-        link: "/hire",
+        link: "/pages/hire",
     },
 ]
 
@@ -79,7 +79,7 @@ const Sidbar = () => {
 
     return (
         <aside className="text-textGray pl-3 pt-10">
-            <nav className="w-fit m-auto py-14 relative before:content-[''] before:absolute before:left-[.8px] before:top-0 before:h-full before:w-0.5 before:bg-textGray/40 before:z-0">
+            <nav className="w-fit m-auto py-14 relative z-10 before:content-[''] before:absolute before:left-[.8px] before:top-0 before:h-full before:w-0.5 before:bg-textGray/40 before:z-0">
                 <ul className='flex flex-col gap-14'>
                     {sidebarMenu.map((menu, i) => (
                         <li className="items-center align-middle justify-items-center h-10" key={menu.id}>

@@ -13,7 +13,7 @@ const Navbar = () => {
     console.log(isOpen);
     
     return (
-        <nav className="flex flex-row justify-between items-center text-white py-5 px-5 md:px-12 xl:px-20 relative z-50">
+        <nav className="flex flex-row w-full justify-between items-center text-white py-5 px-5 md:px-12 xl:px-20 relative z-50">
             {/* logo */}
             <div className="flex flex-row gap-2">
                 <Image src="/img/logo.png" width={30} height={30} alt={"logo"} />
