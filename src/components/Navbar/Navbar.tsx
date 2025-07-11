@@ -25,7 +25,6 @@ const Navbar = () => {
             <button onClick={handleMenu} type="button" className="inline-flex items-center w-5 h-4 justify-center text-sm text-white cursor-pointer border-y-2 border-white">
                 <span className='bg-white w-3 h-0.5 rounded-2xl'></span>
             </button>
-
         </nav>
     );
 }

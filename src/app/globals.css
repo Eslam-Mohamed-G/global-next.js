@@ -39,6 +39,7 @@
         left: -40px !important;
         z-index: 100 !important;
     }
+
     [dir='rtl'] .slick-prev {
         right: -40px !important;
         left: auto !important;
@@ -53,11 +54,13 @@
         left: -40px !important;
     }
 }
+
 @media (max-width: 500px) {
     .slick-prev {
         left: -15px !important;
         z-index: 100 !important;
     }
+
     [dir='rtl'] .slick-prev {
         right: -15px !important;
         left: auto !important;
@@ -114,8 +117,33 @@
     transform: translateZ(0) translateX(0) rotateY(0deg);
     transition: transform .4s;
 }
+
 .custom-3d-transform {
     transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
     outline: 30px solid #0B70CB;
     transition: transform .4s;
+}
+
+/* aside و animations */
+.outer-nav,
+.return {
+    width: 45%;
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    right: 0;
+    align-content: center;
+    will-change: transform, opacity;
+}
+
+.outer-nav {
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transform: translateY(0) rotateY(0deg);
+    opacity: 1;
+}
+
+.return {
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    transform: translateX(100%) rotateY(-45deg);
+    opacity: 0;
 }
