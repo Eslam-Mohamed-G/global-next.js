@@ -7,10 +7,10 @@ type Props = {
 }
 
 const TransformLayout = ({ children }: Props) => {
-    const { isOpen } = useSidebar();
+    const { isOpen, setIsOpen } = useSidebar();
 
     return (
-        <div className={isOpen ? 'custom-3d-transform' : 'remove-3d-transform h-screen'}>
+        <div className={`h-screen ${isOpen ? 'custom-3d-transform' : 'remove-3d-transform'}`} onClick={()=>{setIsOpen(!isOpen)}}>
             {children}
         </div>
     );
