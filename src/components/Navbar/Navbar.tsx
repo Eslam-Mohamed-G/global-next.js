@@ -22,10 +22,8 @@ const Navbar = () => {
             
             <Link href="/hire" className={pathName === "/" || pathName === "/hire" ? 'hidden':'block bg-blueColor px-4 py-0.5 text-white uppercase font-bold'}>Hire us</Link>
 
-            <button onClick={handleMenu} data-collapse-toggle="mega-menu-icons" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg cursor-pointer">
-                <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
+            <button onClick={handleMenu} type="button" className="inline-flex items-center content-center w-6 h-4 justify-center text-sm text-white cursor-pointer border-y-2 border-white">
+                <span className='bg-white rounded-2xl w-4 h-[2px]'/>
             </button>
 
         </nav>
