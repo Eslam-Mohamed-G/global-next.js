@@ -109,3 +109,13 @@
     display: block;
     transition: all 0.3s ease-in-out;
 }
+
+.remove-3d-transform {
+    transform: translateZ(0) translateX(0) rotateY(0deg);
+    transition: transform .4s;
+}
+.custom-3d-transform {
+    transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+    outline: 30px solid #0B70CB;
+    transition: transform .4s;
+}
