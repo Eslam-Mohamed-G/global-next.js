@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Global Portfolio Interface (Next.js)
 
-## Getting Started
+This is a modern portfolio interface built with **Next.js 15+ App Router** and **Tailwind CSS**, featuring a unique 3D sidebar navigation behavior using mouse scroll and keyboard keys.
 
-First, run the development server:
+# [live demo](https://global-next-js.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15+ (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Context API**
+- **Slick Carousel**
+- **Responsive Design (Mobiles + Tablets + Desktops)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🔁 Sidebar Navigation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Smooth 3D transform effect using custom CSS and Tailwind.
+- Toggle sidebar open/close using a hamburger menu in the navbar.
+- Navigate between pages using:
+  - **Arrow Up / Down keys**
+  - **Mouse Scroll (Up/Down)**
+- When a link is clicked in the sidebar, it updates the internal index for correct navigation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📱 Responsive Design
 
-## Deploy on Vercel
+- Navbar and sidebar layout adjust based on screen size (hidden sidebar on small screens).
+- Custom button and animation design for a premium UI experience.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Context API Integration
+
+Global sidebar state (`isOpen`) is managed via React Context:
+
+```ts
+type SidebarContextType = {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
