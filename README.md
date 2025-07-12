@@ -35,7 +35,7 @@ This is a modern portfolio interface built with **Next.js 15+ App Router** and *
   - **Mouse Scroll (Up/Down)**
 - When a link is clicked in the sidebar, it updates the internal index for correct navigation.
 <p align="center">
-  <img src="./public/preview/preview-6.png" width="75%" />
+  <img src="./public/preview/preview-3.png" width="75%" />
 </p>
 
 ### 📱 Responsive Design
