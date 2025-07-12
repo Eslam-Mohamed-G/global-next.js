@@ -37,6 +37,12 @@
 .slick-next::before {
     content: " " !important;
 }
+div.slick-arrow:nth-child(1){
+    content: " " !important;
+}
+div.slick-arrow:nth-child(1)::before{
+    content: " " !important;
+}
 
 @media (max-width: 900px) {
     .slick-prev {
