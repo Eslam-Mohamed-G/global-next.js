@@ -36,12 +36,18 @@
 .slick-prev::before,
 .slick-next::before, 
 div.slick-arrow:nth-child(1),
-div.slick-arrow:nth-child(1)::before {
+div.slick-arrow:nth-child(1)::before,
+div.slick-arrow:nth-child(3),
+div.slick-arrow:nth-child(3)::before {
     content: " " !important;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     background-color: var(--color-borderGray);
 }
-
 
 @media (max-width: 900px) {
     .slick-prev {
