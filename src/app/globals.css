@@ -33,10 +33,12 @@
         transform: scale(1.25);
     }
 }
-/* .slick-prev::before,
-.slick-next::before,  */
-/* div.slick-arrow:nth-child(1)::before, */
-/* div.slick-arrow:nth-child(3)::before */
+.slick-prev::before,
+.slick-next::before,
+div.slick-arrow:nth-child(1)::before,
+div.slick-arrow:nth-child(3)::before {
+    content: " " !important;
+}
 div.slick-arrow:nth-child(1),
 div.slick-arrow:nth-child(3) {
     content: " " !important;
