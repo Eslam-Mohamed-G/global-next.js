@@ -38,20 +38,24 @@
     .slick-prev {
         left: -40px !important;
         z-index: 100 !important;
+        content: "" !important;
     }
 
     [dir='rtl'] .slick-prev {
         right: -40px !important;
         left: auto !important;
+        content: "" !important;
     }
 
     .slick-next {
         right: -40px !important;
+        content: "" !important;
     }
 
     [dir='rtl'] .slick-next {
         right: auto !important;
         left: -40px !important;
+        content: "" !important;
     }
 }
 
@@ -59,20 +63,24 @@
     .slick-prev {
         left: -15px !important;
         z-index: 100 !important;
+        content: "" !important;
     }
 
     [dir='rtl'] .slick-prev {
         right: -15px !important;
         left: auto !important;
+        content: "" !important;
     }
 
     .slick-next {
         right: -15px !important;
+        content: "" !important;
     }
 
     [dir='rtl'] .slick-next {
         right: auto !important;
         left: -15px !important;
+        content: "" !important;
     }
 }
 
