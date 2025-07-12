@@ -10,7 +10,6 @@ const Navbar = () => {
     const {isOpen, setIsOpen} = useSidebar();
 
     const handleMenu = ()=>{setIsOpen(!isOpen)}
-    console.log(isOpen);
     
     return (
         <nav className="flex flex-row justify-between items-center text-white py-5 px-5 md:px-12 xl:px-20 relative z-50">
