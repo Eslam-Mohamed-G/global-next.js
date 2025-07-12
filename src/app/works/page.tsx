@@ -4,9 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-function SampleNextArrow(props: any) {
-    const { className, onClick } = props;
+type ArrowProps = {
+    className?: string;
+    style?: React.CSSProperties;
+    onClick?: () => void;
+};
+function SampleNextArrow({className, onClick}: ArrowProps) {
     return (
         <div onClick={onClick} className={className}>
             <svg className="w-4 h-4 text-white relative z-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -16,8 +19,7 @@ function SampleNextArrow(props: any) {
     );
 }
 
-function SamplePrevArrow(props: any) {
-    const { className, onClick } = props;
+function SamplePrevArrow({className, onClick}: ArrowProps) {
     return (
         <div
             className={className}
