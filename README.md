@@ -36,9 +36,10 @@ This is a modern portfolio interface built with **Next.js 15+ App Router** and *
 
 - Navbar and sidebar layout adjust based on screen size (hidden sidebar on small screens).
 - Custom button and animation design for a premium UI experience.
-| صورة 1 | صورة 2 |
-|--------|--------|
-| ![](./public/preview/preview-5.png) | ![](./public/preview/preview-2.png) |
+<p align="center">
+  <img src="./public/preview/preview-5.png" width="45%" />
+  <img src="./public/preview/preview-2.png" width="45%" />
+</p>
 
 
 ---
