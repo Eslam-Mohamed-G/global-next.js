@@ -33,12 +33,15 @@
         transform: scale(1.25);
     }
 }
+.slick-prev::before,
+.slick-next::before {
+    content: " " !important;
+}
 
 @media (max-width: 900px) {
     .slick-prev {
         left: -40px !important;
         z-index: 100 !important;
-        content: "" !important;
     }
 
     [dir='rtl'] .slick-prev {
