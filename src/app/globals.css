@@ -33,12 +33,12 @@
         transform: scale(1.25);
     }
 }
-.slick-prev::before,
-.slick-next::before, 
+/* .slick-prev::before,
+.slick-next::before,  */
+/* div.slick-arrow:nth-child(1)::before, */
+/* div.slick-arrow:nth-child(3)::before */
 div.slick-arrow:nth-child(1),
-div.slick-arrow:nth-child(1)::before,
-div.slick-arrow:nth-child(3),
-div.slick-arrow:nth-child(3)::before {
+div.slick-arrow:nth-child(3) {
     content: " " !important;
     border-radius: 50%;
     width: 50px;
