@@ -6,10 +6,7 @@ This is a modern portfolio interface built with **Next.js 15+ App Router** and *
 
 ---
 ![Add Product Preview](./public/preview/preview-1.png)
-![Add Product Preview](./public/preview/preview-2.png)
-![Add Product Preview](./public/preview/preview-3.png)
 ![Add Product Preview](./public/preview/preview-4.png)
-![Add Product Preview](./public/preview/preview-5.png)
 ![Add Product Preview](./public/preview/preview-6.png)
 
 ## 🚀 Tech Stack
@@ -33,11 +30,14 @@ This is a modern portfolio interface built with **Next.js 15+ App Router** and *
   - **Arrow Up / Down keys**
   - **Mouse Scroll (Up/Down)**
 - When a link is clicked in the sidebar, it updates the internal index for correct navigation.
+![Add Product Preview](./public/preview/preview-3.png)
 
 ### 📱 Responsive Design
 
 - Navbar and sidebar layout adjust based on screen size (hidden sidebar on small screens).
+![Add Product Preview](./public/preview/preview-2.png)
 - Custom button and animation design for a premium UI experience.
+![Add Product Preview](./public/preview/preview-5.png)
 
 ---
 
