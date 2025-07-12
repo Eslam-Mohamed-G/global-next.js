@@ -54,7 +54,7 @@ const TransformLayout = ({ children }: Props) => {
             {/* navbar */}
             <aside className={`text-white ${isOpen ? 'outer-nav' : 'return' }`}>
                 <ul className='flex flex-col w-fit gap-5 md:gap-10 text-4xl sm:text-5xl md:text-6xl font-extrabold justify-center items-center'>
-                    {sidebarMenu.map((menu, i) => (
+                    {sidebarMenu.map((menu) => (
                         <li key={menu.id} onClick={handleMenu} className='relative w-fit'>
                             <Link href={menu.link} className={pathName === menu.link ? 'after:absolute after:h-2 sm:after:h-3 md:after:h-4 after:-start-4 after:-end-4 after:top-1/2 after:bg-blueColor' : '' }>{menu.name}</Link>
                         </li>

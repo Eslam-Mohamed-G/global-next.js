@@ -75,7 +75,7 @@ const Sidbar = () => {
             window.removeEventListener('keydown', handleKeyDown);
             window.removeEventListener('wheel', handleWheelMouse);
         };
-    }, [router]);
+    }, [router, pathName]);
 
     return (
         <aside className="text-textGray pl-3 pt-10">
