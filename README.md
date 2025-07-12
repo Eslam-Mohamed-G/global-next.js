@@ -35,9 +35,11 @@ This is a modern portfolio interface built with **Next.js 15+ App Router** and *
 ### 📱 Responsive Design
 
 - Navbar and sidebar layout adjust based on screen size (hidden sidebar on small screens).
-![Add Product Preview](./public/preview/preview-2.png)
 - Custom button and animation design for a premium UI experience.
-![Add Product Preview](./public/preview/preview-5.png)
+| صورة 1 | صورة 2 |
+|--------|--------|
+| ![](./public/preview/preview-5.png) | ![](./public/preview/preview-2.png) |
+
 
 ---
 
