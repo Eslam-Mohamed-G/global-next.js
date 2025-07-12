@@ -9,7 +9,7 @@ type ArrowProps = {
     style?: React.CSSProperties;
     onClick?: () => void;
 };
-function SampleNextArrow({className, onClick}: ArrowProps) {
+function SampleNextArrow({ className, onClick }: ArrowProps) {
     return (
         <div onClick={onClick} className={className}>
             <svg className="w-4 h-4 text-white relative z-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -19,7 +19,7 @@ function SampleNextArrow({className, onClick}: ArrowProps) {
     );
 }
 
-function SamplePrevArrow({className, onClick}: ArrowProps) {
+function SamplePrevArrow({ className, onClick }: ArrowProps) {
     return (
         <div
             className={className}
