@@ -1,4 +1,8 @@
 # 🌐 Global Portfolio Interface (Next.js)
+<video width="600" controls>
+  <source src="./preview/preview-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 This is a modern portfolio interface built with **Next.js 15+ App Router** and **Tailwind CSS**, featuring a unique 3D sidebar navigation behavior using mouse scroll and keyboard keys.
 
