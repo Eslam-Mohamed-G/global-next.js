@@ -48,7 +48,7 @@ const TransformLayout = ({ children }: Props) => {
 
     return (
         <>
-            <div className={`h-screen ${isOpen ? 'custom-3d-transform cursor-pointer' : 'remove-3d-transform'}`} onClick={handleMenu}>
+            <div className={`h-screen w-screen overflow-hidden ${isOpen ? 'custom-3d-transform cursor-pointer' : 'remove-3d-transform'}`} onClick={handleMenu}>
                 {children}
             </div>
             {/* navbar */}

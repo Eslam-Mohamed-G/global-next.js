@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black h-screen max-w-screen overflow-hidden flex flex-col justify-center perspective-[1500px] relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black h-screen w-screen overflow-x-hidden overflow-hidden flex flex-col justify-center perspective-[1500px] relative`}
       >
         <SidebarProvider>
           <TransformLayout>

@@ -53,7 +53,7 @@ const Works = () => {
         prevArrow: <SamplePrevArrow />
     };
     return (
-        <div className="flex flex-col max-w-screen overflow-hidden content-center items-center justify-center justify-items-center text-white pt-10">
+        <div className="flex flex-col content-center items-center justify-center justify-items-center text-white pt-10">
             <h1 className='font-bold text-4xl'>Selected work</h1>
             <div className="h-full w-80 xsm:w-96 sm:w-lg xmd:w-xl md:min-w-2xl lg:w-3xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
