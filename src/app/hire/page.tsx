@@ -2,7 +2,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className='w-full h-full flex flex-col items-center justify-center gap-16'>
+        <div className='max-w-screen h-full flex flex-col items-center justify-center gap-16'>
             <h1 className='font-bold text-white text-3xl'>You wont us to do</h1>
             <div className="flex flex-col justify-center items-center gap-16">
                 <div className="text-white flex flex-row md:flex-col gap-3 xsm:gap-6 md:gap-10 items-center justify-center">

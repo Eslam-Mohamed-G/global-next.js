@@ -3,9 +3,6 @@
 This is a modern portfolio interface built with **Next.js 15+ App Router** and **Tailwind CSS**, featuring a unique 3D sidebar navigation behavior using mouse scroll and keyboard keys.
 
 # [live demo](https://global-next-js.vercel.app/).
-<p>
-  <a href="https://global-next-js.vercel.app/" target="_blank">live demo</a>
-</p>
 
 ---
 <p align="center">
