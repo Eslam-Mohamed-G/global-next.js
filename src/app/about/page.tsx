@@ -2,7 +2,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className='w-full h-full flex items-center justify-center border border-red-600'>
+        <div className='w-full h-full flex items-center justify-center'>
             <div className="flex flex-row w-full relative lg:pl-10 xl:pl-36">
                 <div className="flex flex-col gap-14 lg:w-2xl relative z-10">
                     <div className="flex flex-col items-start gap-10">
