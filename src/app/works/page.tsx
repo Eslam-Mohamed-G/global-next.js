@@ -5,6 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 
+const images = [
+    { id: 1, name: 'victory', src: '/img/work-victory.jpg' },
+    { id: 2, name: 'metiew & smith', src: '/img/work-metiew-smith.jpg' },
+    { id: 3, name: 'alex nowak', src: '/img/work-alex-nowak.jpg' },
+    { id: 4, name: 'victory', src: '/img/work-victory.jpg' },
+    { id: 5, name: 'metiew & smith', src: '/img/work-metiew-smith.jpg' },
+    { id: 6, name: 'alex nowak', src: '/img/work-alex-nowak.jpg' },
+]
+
 type ArrowProps = {
     className?: string;
     style?: React.CSSProperties;
@@ -58,78 +67,19 @@ const Works = () => {
             <h1 className='font-bold text-4xl'>Selected work</h1>
             <div className="h-full w-80 xsm:w-96 sm:w-lg xmd:w-xl md:min-w-2xl lg:w-3xl xlg:w-4xl xl:w-5xl 2xl:w-6xl content-center">
                 <Slider {...settings}>
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-victory.jpg'} alt={'work-victory'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>vicory</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-metiew-smith.jpg'} alt={'work-metiew-smith'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    {images.map((img) => (
+                        <div className='h-[500px] w-full slick-slide-content' key={img.id}>
+                            <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
+                                <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                    <Image src={img.src} alt={img.name} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52' />
+                                </div>
+                                <div>
+                                    <h1 className='uppercase font-bold name-text'>{img.name}</h1>
+                                    <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-alex-nowak.jpg'} alt={'work-alex-nowak'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>alex nowex</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-victory.jpg'} alt={'work-victory'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>vicory</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-metiew-smith.jpg'} alt={'work-metiew-smith'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='h-[500px] w-full slick-slide-content'>
-                        <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <Image src={'/img/work-alex-nowak.jpg'} alt={'work-alex-nowak'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
-                            </div>
-                            <div>
-                                <h1 className='uppercase font-bold name-text'>alex nowex</h1>
-                                <p className='description-text text-sm text-gray-300 mt-2 hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    ))}
                 </Slider>
             </div>
         </div>
