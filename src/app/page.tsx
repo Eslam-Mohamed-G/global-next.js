@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,7 +26,9 @@ export default function Home() {
         </div>
 
         {/* introduction image */}
-        <img src="/img/introduction.png" alt="introduction" className="hidden sm:block w-80 md:w-full m-0 p-0" />
+        <div className="hidden sm:block md:min-w-[390px] m-0 p-0">
+          <Image src={"/img/introduction.png"} alt={"introduction"} loading="lazy" width={511} height={511} className="object-contain" />
+        </div>
       </div>
 
       <div className="flex-1 flex flex-col md:flex-row md:justify-around md:mx-auto text-white relative before:content-[''] before:absolute before:-top-[31px] sm:before:-top-[43px] before:w-7 before:h-1 before:start-5 before:bg-blueColor before:z-0">

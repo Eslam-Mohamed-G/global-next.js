@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 type ArrowProps = {
     className?: string;
@@ -59,8 +60,8 @@ const Works = () => {
                 <Slider {...settings}>
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
-                            <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
+                            <div className='w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
+                                <Image src={'/img/work-victory.jpg'} alt={'work-victory'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>vicory</h1>
@@ -72,7 +73,7 @@ const Works = () => {
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
                             <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
+                                <Image src={'/img/work-metiew-smith.jpg'} alt={'work-metiew-smith'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
@@ -84,7 +85,7 @@ const Works = () => {
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
                             <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
+                                <Image src={'/img/work-alex-nowak.jpg'} alt={'work-alex-nowak'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>alex nowex</h1>
@@ -96,7 +97,7 @@ const Works = () => {
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
                             <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-victory.jpg" alt="work-victory" className='w-full h-full object-cover' />
+                                <Image src={'/img/work-victory.jpg'} alt={'work-victory'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>vicory</h1>
@@ -108,7 +109,7 @@ const Works = () => {
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
                             <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-metiew-smith.jpg" alt="work-metiew-smith" className='w-full h-full object-cover' />
+                                <Image src={'/img/work-metiew-smith.jpg'} alt={'work-metiew-smith'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>metiew & smith</h1>
@@ -120,7 +121,7 @@ const Works = () => {
                     <div className='h-[500px] w-full slick-slide-content'>
                         <div className="flex flex-col gap-3 items-center justify-center h-full w-full text-center transition-all duration-300">
                             <div className='image-wrapper w-44 h-44 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden transition-all duration-300'>
-                                <img src="/img/work-alex-nowak.jpg" alt="work-alex-nowak" className='w-full h-full object-cover' />
+                                <Image src={'/img/work-alex-nowak.jpg'} alt={'work-alex-nowak'} loading='lazy' width={176} height={176} className='object-cover sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-52 lg:h-52'/>
                             </div>
                             <div>
                                 <h1 className='uppercase font-bold name-text'>alex nowex</h1>
